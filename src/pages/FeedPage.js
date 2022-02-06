@@ -89,7 +89,8 @@ const FeedPage = props => {
     }
 
     const deleteBeefHandler = (beefToDelete, principalBeefId) => {
-        if (beefToDelete === principalBeefId) {
+       
+        if (principalBeefId === null) {
             deleteDoc(doc(db, "beefbook", beefToDelete));
         } else {
             deleteDoc(doc(db, "replybook", beefToDelete));

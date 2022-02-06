@@ -17,6 +17,7 @@ const Options = props => {
     const textCloser = (isES) ? ' Entendido' : 'Got it';
     
     const deleteHandler = () => {
+        console.log(props.beef.beefId)
         if (props.isPrincipal) {
             if (props.beef.answers.length > 0) {
                 setShowAlert(true)
