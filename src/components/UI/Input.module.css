@@ -1,0 +1,39 @@
+.InputWrapper {
+    position: relative;
+    border-radius: 4px;
+    height: 12vw;
+    max-height: 45px;
+    max-width: 600px;
+    margin: auto;
+    background: var(--whitish);
+    margin-bottom: 4vw;
+}
+
+.InputWrapper input {
+   font-size: var(--font14);
+   z-index: 2;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   transition: .3s;
+  
+}
+
+label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font14);
+    z-index: 1;
+    transition: .3s;
+}
+
+label.focused {
+    font-size: var(--font12);
+    top: -5vw;
+
+}

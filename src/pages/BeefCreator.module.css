@@ -1,0 +1,49 @@
+.Body, .Uploading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: var(--padding);
+    margin-top: var(--headerHeight);
+}
+
+.Uploading h2 {
+    font-size: var(--font20);
+}
+
+.Body div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: var(--font12);
+}
+
+.Block {
+    margin-bottom:4vw;
+}
+
+.Body div p {
+    margin-bottom: 2vw;
+}
+
+.Body div p span {
+    font-weight: 100;
+}
+
+.Creator form button {
+    height: var(--btheight);
+    background: var(--blue);
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 800;
+}
+
+.Disclaimer {
+    font-weight: 300;
+    margin-top: 2vw;
+}
+
+.TextWarning {
+    color: var(--warning);
+    font-weight: 600!important;
+}

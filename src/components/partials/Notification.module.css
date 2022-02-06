@@ -1,0 +1,50 @@
+.Notification, .Unseen {
+    font-size: var(--font11);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2.5vw var(--Hpadding);
+}
+
+.Unseen {
+    background: rgb(243, 243, 243);
+}
+
+.Left {
+    width: 14vw;
+    margin-right: 3vw;
+}
+
+.Right {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.WhoMid {
+    width: 65%;
+}
+
+.Who p, .WhoMid p {
+    font-weight: 300;
+    color: grey;
+}
+
+.Who span, .WhoMid span {
+    font-size: var(--font9);
+    font-weight: 300;
+    color: rgb(175, 175, 175);
+}
+
+.Action {
+    width: 35%;
+}
+
+.Action button {
+    font-size: var(--font8);
+    height: 7vw;
+    font-weight: 700;
+    width: 100%!important;
+    margin: 0!important;
+}

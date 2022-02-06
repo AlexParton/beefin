@@ -1,0 +1,35 @@
+.Person {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3vw;
+}
+
+.Person a{
+    display: flex;
+    width: 70vw;
+    align-items: center;
+}
+
+.AvatarWrapper {
+    width: 14vw;
+}
+
+.TextWrapper {
+    width: 54vw;
+    margin:0 3vw;
+}
+
+.TextWrapper p:nth-child(1) {
+    font-size: var(--font14);
+    font-weight: 600;
+}
+
+.TextWrapper p:nth-child(2) {
+    font-size: var(--font11);
+    font-weight: 300;
+}
+
+.ButtonWrapper {
+    width: 23vw;
+}

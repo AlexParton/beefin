@@ -1,0 +1,37 @@
+.SinglePost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5vw;
+    border-bottom: 1px solid var(--whitish);
+}
+
+.Right {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
+
+.Right p {
+    font-size: var(--font11);
+}
+
+.Right p:nth-child(1) {
+    font-size: var(--font10);
+    font-weight: 100;
+}
+
+.Right p:nth-child(2) {
+    margin: 2vw 0;
+}
+
+.Right p:nth-child(3) {
+    display: block;
+    line-height: 1;
+    font-size: var(--font10);
+    color: grey;
+    font-weight: 100;
+}

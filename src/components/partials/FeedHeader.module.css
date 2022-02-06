@@ -1,0 +1,44 @@
+.FeedHeader {
+    height: var(--headerHeight);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    text-align: center;
+    padding: 1vw 0;
+    color: var(--red);
+    z-index: 100000;
+}
+
+.FeedHeader svg {
+    font-size: var(--font35);
+    color: var(--red);
+}
+
+.FeedHeader div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 1vw auto 0;
+}
+
+.FeedHeader div button {
+    width: 50%;
+    padding: 0 3vw;
+   
+}
+
+.Inactive {
+    font-weight: 100;
+    color: #fa907a;
+}
+
+.Active {
+    font-weight: 500;
+    color: var(--red);
+} 
+
+.FeedHeader div button:nth-child(1) {
+    border-right: 1px solid black;
+}

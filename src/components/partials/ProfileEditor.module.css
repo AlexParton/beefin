@@ -1,0 +1,21 @@
+.Editor {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.UserImgHolder {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    overflow: hidden;
+}

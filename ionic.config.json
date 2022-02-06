@@ -1,0 +1,7 @@
+{
+    "name": "Beefin",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

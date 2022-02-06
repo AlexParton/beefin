@@ -1,0 +1,5 @@
+.PostWrapper {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: var(--headerHeight) 0 var(--bottomHeight);
+}

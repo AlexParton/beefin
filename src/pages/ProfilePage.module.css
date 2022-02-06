@@ -1,0 +1,82 @@
+.Profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--headerHeight);
+}
+
+.Profile h3 {
+    font-size: var(--font14);
+    /* margin: 2vw 0; */
+    margin: 8px 0;
+}
+
+.Profile p {
+    font-size: var(--font12);
+    /* padding: 0 10vw; */
+    padding: 0 3%;
+}
+
+.Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    /* margin-top: 2vw; */
+    margin-top: 8px;
+    /* padding: 0 3vw; */
+    padding: 0 3%;
+}
+
+.Stats div, .Stats button {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: 5vw; */
+    margin-top: 20px;
+}
+
+.Stats div span:nth-child(1), .Stats button span:nth-child(1){
+    font-weight: 800;
+    font-size: var(--font14);
+}
+
+.Stats div span:nth-child(2), .Stats button span:nth-child(2){
+    font-weight: 300;
+    font-size: var(--font9);
+}
+
+.BeefWrapper {
+    border-top: 1px solid var(--whitish);
+}
+
+.NoBeef {
+    padding: 10vw;
+    padding: 30px 4%;
+    text-align: center;
+    color: rgb(187, 187, 187);
+}
+
+.FilterAction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #e0e0e0;
+    width: 90%;
+    margin: 7vw auto 0;
+}
+
+.FilterAction button {
+    width: 40%;
+    font-size: var(--font9);
+    padding: 2vw 0 0;
+    color: #a8a8a8;
+}
+
+.FilterActive {
+    color: black!important;
+}

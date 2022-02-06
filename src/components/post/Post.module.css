@@ -1,0 +1,229 @@
+.Post {
+    height: 45%;
+    padding: 10vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background: var(--white);
+}
+
+.Left a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.Left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+.Right {
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.AnswersRight {
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Name{
+    font-size: var(--font15);
+    font-weight: 700;
+}
+.BeefText {
+    font-size: var(--font14);
+    font-weight: 400;
+    height: 70%;
+    margin: 2vw 0;
+}
+
+.BeefText span, .AnswerText span {
+    display: block;
+    line-height: 1;
+    padding: 2vw 0 0;
+    font-size: var(--font10);
+    color: grey;
+    font-weight: 100;
+}
+
+.AnswerName{
+    font-size: var(--font13);
+    font-weight: 700;
+}
+.AnswerText {
+    font-size: var(--font11);
+    font-weight: 400;
+    margin: 1vw 0;
+}
+
+.Action, .SelfAction {
+    display: flex;
+    font-size: var(--font9);
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 7vw;
+}
+
+.Action div {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.Action div button {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.Action div:nth-child(1) {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.SelfAction div:nth-child(1), .Action div:nth-child(1) a {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.SelfAction div:nth-child(2), .SelfAction div:nth-child(3) {
+    display: none;
+}  
+
+.Action div div:nth-child(1) {
+    width: 100%;
+    justify-content: center;
+}
+
+.Stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: var(--font9);
+    color: var(--red);
+}
+
+.Mva {
+    font-size: var(--font9);
+    color: var(--yellow);
+    position: absolute;
+    top: 1.5vw;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.Mva svg {
+    margin-right: 1vw;
+}
+
+.Winning {
+   font-weight: 700;
+}
+
+.AnswerLike {
+    position: absolute;
+    left: 5vw;
+    top: 33vw;
+    width: auto!important;
+}
+
+.NameWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NameWrapper a {
+    margin-right: 3vw;
+}
+
+.NameWrapper a, .NameWrapper p {
+    width: auto;
+    line-height: 1;
+} 
+
+.TagWrapper {
+    width: auto;
+    line-height: 1;
+    font-size: var(--font11);
+    font-weight: 100;
+}
+
+.OptionsWrapper {
+    width: 10vw;
+    position: absolute;
+    top: 12vw;
+    right: 0;
+}
+
+.Options {
+    display: flex;
+}
+
+.Options div {
+    width: 1.1vw;
+    height: 1.1vw;
+    background: var(--red);
+    border-radius: 100%;
+}
+
+.Options div:nth-child(2) {
+    margin: 0 0.7vw;
+}
+
+.OptionsModal {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 10vw;
+    text-align: center;
+    background: var(--red);
+    color: var(--white);
+    box-shadow: -1px 4px 13px #00000033;
+    padding: 2vw 4vw;
+    font-size: var(--font9);
+    border-radius: 4px 0 0 4px;
+    z-index: 1000;
+}
+
+.OptionsModal p {
+    padding: 0 0 2vw;
+    color: black;
+}
+
+.OptionsModal a, .OptionsModal button{
+    height: 12vw;
+    font-weight: 700;
+    font-size: var(--font20);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OptionsSelector {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}

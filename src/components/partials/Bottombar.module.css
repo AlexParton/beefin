@@ -1,0 +1,77 @@
+.Bottombar {
+    height: var(--bottomHeight);
+    background: #1a1a1a;
+    color: var(--white);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2vw;
+    align-items: center;
+    text-align: center;
+    z-index: 1000000;
+}
+
+.Bottombar li {
+    width: 20%;
+    font-size: var(--font8);
+    position: relative;
+}
+
+.Bottombar li button, .Bottombar li a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Bottombar svg {
+    font-size: var(--font16);
+    margin-bottom: 1vw;
+;
+}
+
+.Bottombar li:nth-child(3) {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.Bottombar li:nth-child(4) svg {
+    font-size: var(--font14);
+}
+
+.CustomAdd {
+    background: var(--white);
+    padding: 0;
+    width: 70%;
+    height: 65%;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: var(--beefShadow);
+    align-items: center;
+}
+
+.CustomAdd svg {
+    transform: translateY(1px);
+}
+
+.NotiAlert {
+    width: 4.5vw;
+    height: 4.5vw;
+    background: var(--red);
+    border-radius: 100%;
+    position: absolute;
+    top: -1.3vw;
+    right: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotiAlert span {
+    font-size: var(--font8);
+    line-height: 1;
+    font-weight: 900;
+}

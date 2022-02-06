@@ -1,0 +1,23 @@
+.NotificationWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--headerHeight);
+}
+
+.Separator {
+    font-size: var(--font9);
+    color: #939393;
+   padding-left: var(--Hpadding);
+}
+
+.WrapperByDate {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2vw;
+}
+
+.NoNots {
+    padding: 10vw;
+    margin-top: var(--headerHeight);
+    text-align: center;
+}

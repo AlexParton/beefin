@@ -1,0 +1,67 @@
+.Register {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Header {
+    text-align: center;
+    color: var(--red);
+}
+
+.Header svg {
+    font-size: var(--font40);
+}
+
+.Header h1 {
+    font-size: var(--font35);
+}
+
+.Register form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw 0;
+}
+
+.Register form button, .SendRecovery {
+    background: var(--red);
+    height: calc(var(--btheight) + 2vw);
+    border-radius: 6px;
+    color: #fff;
+    font-size: var(--font12);
+    font-weight: 800;
+}
+
+.Success {
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.Success h1{
+    font-size: var(--font14);
+    font-weight: 800;
+}
+
+.Success h2{
+    font-size: var(--font30);
+    font-weight: 100;
+}
+
+.Forgot {
+    background: none!important;
+    color: var(--black)!important;
+    height: 5vw!important;
+    font-weight: 700!important;
+    margin-bottom: 3vw;
+}
+
+.Terms {
+    font-size: var(--font8);
+    margin-top: 5vw;
+    color: var(--red);
+}
+
+.Terms a {
+    font-weight: 700;
+}

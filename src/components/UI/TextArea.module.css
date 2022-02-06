@@ -1,0 +1,22 @@
+.TextArea, .TextAreaShort {
+    background: var(--white);
+    border-radius: 4px;
+    position: relative;
+    height: 33vw;
+    box-shadow: var(--beefShadow);
+}
+
+.TextAreaShort {
+    height: 12vw;
+}
+
+.TextArea  textarea, .TextAreaShort  textarea  {
+    padding: 4vw;
+    text-align: left;
+    height: 100%;
+   font-size: var(--font14);
+}
+
+.TextAreaShort  textarea {
+    text-align: center;
+}

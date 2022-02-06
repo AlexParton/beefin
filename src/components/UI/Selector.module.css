@@ -1,0 +1,51 @@
+.Selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0;
+}
+
+.Selector p {
+    width: 70%;
+    font-size: var(--font14);
+}
+
+.Selector p span {
+    font-size: var(--font8);
+    display: block;
+    line-height: 1.2;
+    padding: 1vw 0 0;
+    font-weight: 100;
+}
+
+.ButtonWrapper {
+    width: 10vw;
+}
+
+.ButtonWrapper div {
+    width: 11vw;
+    height: 6vw;
+    border: 1px solid #c9c9c9;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.ButtonWrapper button {
+    height: 4.5vw;
+    width: 4.5vw;
+    background: #c9c9c9;
+    border-radius: 100%;
+}
+
+.ButtonActive {
+    justify-content: flex-start!important;
+    border: 1px solid var(--red)!important;
+} 
+
+.ButtonActive button{
+    background: var(--red);
+} 

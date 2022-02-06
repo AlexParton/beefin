@@ -1,0 +1,12 @@
+.Terms {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.TermsBody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}

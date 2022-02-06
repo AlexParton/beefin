@@ -1,0 +1,34 @@
+.Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vw 4vw;
+    position: fixed;
+    top: 0;
+    background: var(--white);
+    height: var(--headerHeight);
+    z-index: 100000;
+}
+
+.Header h2 {
+    width: 64%;
+    font-size: var(--font16);
+    text-align: center;
+}
+
+.Settings{
+    width: 18%;
+    font-size: var(--font18);
+    text-align: left;
+}
+
+.Add   {
+ width: 18%;
+ display: flex;
+ font-size: var(--font18);
+}
+
+.Add button:nth-child(1) {
+    margin-right: 3vw;
+}
