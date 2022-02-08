@@ -6,9 +6,11 @@
   --font: 'Nunito Sans', sans-serif;
   --handFont: 'Great Vibes', cursive;
   --black: #113828;
+  --darkgrey: #a8a8a8;
   --white: #fff;
   --whitish:#fff8f7;
   --grey: #fefff0;
+  --lightgrey:#ebebeb;
   --red: #F2421B;
   --blue: #2A5CBF;
   --lightblue: #A3D9D9;
@@ -54,7 +56,9 @@
   --white: #131313;
   --whitish:#2c2c2c;
   --red: #a71e00;
-  --black: #b0b0b0
+  --black: #b0b0b0;
+  --darkgrey: #797979;
+  --lightgrey: #333333;
 }
 
 body [data-theme="darkmode"] {
@@ -146,7 +150,7 @@ a {
 
 main {
   /* margin-top: var(--headerHeight); */
-  min-height: calc(100vh - var(--headerHeight));
+  min-height: 100vh;
   padding-bottom: var(--bottomHeight);
 }
 
@@ -199,7 +203,7 @@ strong{
 
 .separator {
   width: 80%;
-  background: rgb(235, 235, 235);
+  background: var(--lightgrey);
   height: 1px;
   margin-left: 20%;
 }
@@ -239,7 +243,7 @@ strong{
 }
 
 .answerpost {
-  border-bottom: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid var(--lightgrey);
   height: 46vw!important;
 }
 

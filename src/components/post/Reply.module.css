@@ -1,10 +1,10 @@
 .Reply {
-    padding: 8vw var(--Hpadding) 6vw;
+    padding: 10vw var(--Hpadding) 4vw;
     height: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #fff;
+    background: var(--white);
     align-items: flex-start;
 }
 

@@ -5,7 +5,7 @@
     left: 0;
     background: var(--white);
     text-align: center;
-    padding: 1vw 0;
+    padding: 4vw 0 1vw;
     color: var(--red);
     z-index: 100000;
 }

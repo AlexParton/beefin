@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid var(--lightgrey);
     background: var(--white);
 }
 

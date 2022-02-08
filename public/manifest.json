@@ -4,6 +4,7 @@
   "theme_color": "#F2421B",
   "background_color": "#fff",
   "display": "standalone",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icons/favicon-16x16.png",
@@ -80,6 +81,12 @@
     {
       "src": "icons/icon-180x180.png",
       "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }

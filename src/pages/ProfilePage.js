@@ -20,7 +20,7 @@ const ProfilePage = props => {
     const location = useLocation();
     const profileHash = params.profileHash;
     const profileId = location.state.profileId;
-
+   
     const isES = (navigator.language === 'es');
     const textFollowing = (isES) ? 'Siguiendo' : 'Following';
     const textFollowers = (isES) ? 'Seguidores' : 'Followers';
@@ -90,6 +90,10 @@ const ProfilePage = props => {
     }
    
     useEffect(() => {
+        if (!!location.state.profileHash) {
+            setSeeFollowers(false)
+            setSeeFollowing(false)
+        } 
         getBeefs();
         (user.followedBy && user.followedBy.length > 0) && setIsFollowed(user.followedBy.includes(localStorage.getItem('uid')));
         getReplies();
@@ -136,6 +140,7 @@ const ProfilePage = props => {
 
     const [seeFollowing, setSeeFollowing] = useState(false);
     const [seeFollowers, setSeeFollowers] = useState(false);
+   
 
      if (seeFollowing) {
          return  (
