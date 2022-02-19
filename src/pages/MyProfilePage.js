@@ -42,6 +42,7 @@ const MyProfilePage = props => {
     const textDarkMode = (isES) ? 'Modo oscuro' : 'Dark mode';
     const textHideLabel = (isES) ? 'Los demás usuarios no podrán ver quién te sigue ni a quién sigues.' : 'Users will not see who do you follow or who follows you'
     const textHideTitle = (isES) ? 'Modo privado' : 'Hide followed users';
+    const textPushTitle = (isES) ? 'Permitir notificaciones' : 'Allow notifications';
     const textChangePass = (isES) ? 'Cambia contraseña' : 'Change password';
     const textLogout = (isES) ? 'Cerrar sesión' : 'Logout';
     const textDeleteAcc = (isES) ? 'Eliminar cuenta' : 'Delete account';
@@ -78,8 +79,8 @@ const MyProfilePage = props => {
                 }
             })
         }
-
-        setProfileBeefs(loadedBeefs);
+        const orderedBeefs = loadedBeefs.sort((a,b) => (a.timestamp < b.timestamp) ? 1 : ((b.timestamp < a.timestamp) ? -1 : 0))
+        setProfileBeefs(orderedBeefs);
         setTotalBeefs(loadedBeefs.length);
     }
 
@@ -93,7 +94,8 @@ const MyProfilePage = props => {
                 // console.log(doc.data())
                 loadedReplies.push(doc.data());
             });
-            setProfileReplies(loadedReplies);
+            const orderedBeefs = loadedReplies.sort((a,b) => (a.timestamp < b.timestamp) ? 1 : ((b.timestamp < a.timestamp) ? -1 : 0))
+            setProfileReplies(orderedBeefs);
         })
     }
    
@@ -113,12 +115,12 @@ const MyProfilePage = props => {
     const followingCount = (user.following) ? user.following.length : 0;
     const followedCount = (user.followedBy) ? user.followedBy.length : 0;
    
-    const displayBeefs = (profileBeefs.length === 0 || profileBeefs[0].beefId === '') 
-                         ? <div className={classes.NoBeef}>${textNoHaveBeefs}</div> 
+    const displayBeefs = (profileBeefs.length === 0 ) 
+                         ? <div className={classes.NoBeef}>{textNoHaveBeefs}</div> 
                          : profileBeefs.map((beef) => <SinglePost principalId={beef.beefId} key={beef.beefId} beef={beef} avatarUrl={avatarUrl}/>)
     ;
     
-    const displayReplies = (profileReplies.length === 0 || profileBeefs[0].beefId === '') 
+    const displayReplies = (profileReplies.length === 0 ) 
                         ? <div className={classes.NoBeef}>{`${user.displayName} ${textNoHaveReplies}`}</div> 
                         : profileReplies.map((beef) => <SinglePost principalId={beef.replyTo} key={Math.floor(Math.random() * 10000)} beef={beef} avatarUrl={avatarUrl}/>)
     ;     
@@ -234,6 +236,7 @@ const MyProfilePage = props => {
                     <div className="settings-item">
                         <Selector title={textDarkMode} isActive={darkModeActive} onActivate={()=>{updateSetting('darkmode', !darkModeActive)}}/>
                         <Selector label={textHideLabel} title={textHideTitle} isActive={hideFollowedActive} onActivate={()=>{updateSetting('hidefollowed', !hideFollowedActive)}}/>
+                        <Selector title={textPushTitle} isActive={hideFollowedActive} onActivate={()=>{updateSetting('hidefollowed', !hideFollowedActive)}}/>
                     </div>
                     <h2>Account settings</h2>
                     <div className="accsettings">

@@ -70,8 +70,8 @@ const ProfilePage = props => {
                 }
             })
         }
-
-        setProfileBeefs(loadedBeefs);
+        const orderedBeefs = loadedBeefs.sort((a,b) => (a.timestamp < b.timestamp) ? 1 : ((b.timestamp < a.timestamp) ? -1 : 0))
+        setProfileBeefs(orderedBeefs);
         setTotalBeefs(loadedBeefs.length);
     }
 
@@ -85,7 +85,8 @@ const ProfilePage = props => {
                 // console.log(doc.data())
                 loadedReplies.push(doc.data());
             });
-            setProfileReplies(loadedReplies);
+            const orderedBeefs = loadedReplies.sort((a,b) => (a.timestamp < b.timestamp) ? 1 : ((b.timestamp < a.timestamp) ? -1 : 0))
+            setProfileReplies(orderedBeefs);
         })
     }
    
@@ -105,12 +106,12 @@ const ProfilePage = props => {
 
     const followingCount = (user.following) ? user.following.length : 0;
     const followedCount = (user.followedBy) ? user.followedBy.length : 0;
-    const displayBeefs = (profileBeefs.length === 0 || profileBeefs[0].beefId === '') 
+    const displayBeefs = (profileBeefs.length === 0 ) 
                          ? <div className={classes.NoBeef}>{`${user.displayName} ${textNoHaveBeefs}`}</div> 
                          : profileBeefs.map((beef) => <SinglePost principalId={beef.beefId} key={beef.beefId} beef={beef} avatarUrl={avatarUrl}/>)
     ;
     
-    const displayReplies = (profileReplies.length === 0 || profileBeefs[0].beefId === '') 
+    const displayReplies = (profileReplies.length === 0 ) 
                         ? <div className={classes.NoBeef}>{`${user.displayName} ${textNoHaveReplies}`}</div> 
                         : profileReplies.map((beef) => <SinglePost principalId={beef.replyTo} key={Math.floor(Math.random() * 10000)} beef={beef} avatarUrl={avatarUrl}/>)
     ;      

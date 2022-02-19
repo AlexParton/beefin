@@ -1,0 +1,84 @@
+[debug] [2022-02-19T11:49:58.518Z] ----------------------------------------------------------------------
+[debug] [2022-02-19T11:49:58.520Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-02-19T11:49:58.521Z] CLI Version:   10.0.1
+[debug] [2022-02-19T11:49:58.521Z] Platform:      darwin
+[debug] [2022-02-19T11:49:58.522Z] Node Version:  v16.13.1
+[debug] [2022-02-19T11:49:58.526Z] Time:          Sat Feb 19 2022 12:49:58 GMT+0100 (Central European Standard Time)
+[debug] [2022-02-19T11:49:58.526Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-19T11:49:58.681Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-19T11:49:58.683Z] > authorizing via signed-in user (cmykfoundation@gmail.com)
+[debug] [2022-02-19T11:49:58.683Z] [iam] checking project beefin-b940a for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2022-02-19T11:49:58.687Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/beefin-b940a:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-02-19T11:49:59.771Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:49:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=656","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:49:59.774Z] > refreshing access token with scopes: []
+[debug] [2022-02-19T11:49:59.774Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-19T11:49:59.879Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 19 Feb 2022 11:49:59 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:49:59.931Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a [none]
+[debug] [2022-02-19T11:50:00.320Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a 200
+[debug] [2022-02-19T11:50:00.320Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a {"projectId":"beefin-b940a","projectNumber":"79012311335","displayName":"Beefin","name":"projects/beefin-b940a","resources":{"hostingSite":"beefin-b940a","realtimeDatabaseInstance":"beefin-b940a-default-rtdb","storageBucket":"beefin-b940a.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-02-19T11:50:00.321Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a [none]
+[debug] [2022-02-19T11:50:00.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a 200
+[debug] [2022-02-19T11:50:00.776Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beefin-b940a {"projectId":"beefin-b940a","projectNumber":"79012311335","displayName":"Beefin","name":"projects/beefin-b940a","resources":{"hostingSite":"beefin-b940a","realtimeDatabaseInstance":"beefin-b940a-default-rtdb","storageBucket":"beefin-b940a.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'beefin-b940a'...
+[info] 
+[info] i  deploying database, storage, firestore, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2022-02-19T11:50:00.787Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-19T11:50:00.787Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-19T11:50:00.875Z] <<< HTTP RESPONSE 200 {"date":"Sat, 19 Feb 2022 11:50:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:00.906Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/beefin-b940a/locations/-/instances/beefin-b940a-default-rtdb  
+ 
+[debug] [2022-02-19T11:50:01.186Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:01.189Z] >>> HTTP REQUEST PUT https://beefin-b940a-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json?dryRun=true  
+ {
+    "rules": {
+      ".read": "now < 1644015600000",  
+      ".write": "now < 1644015600000"
+    }
+  }
+[debug] [2022-02-19T11:50:01.497Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 19 Feb 2022 11:50:01 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  database: rules syntax for database beefin-b940a-default-rtdb is valid 
+[debug] [2022-02-19T11:50:01.521Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/beefin-b940a  
+ 
+[debug] [2022-02-19T11:50:02.000Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2022-02-19T11:50:02.017Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/beefin-b940a:test  
+ {"source":{"files":[{"name":"storage.rules","content":"rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if true;\n    }\n  }\n}\n"}]}}
+[debug] [2022-02-19T11:50:02.821Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2022-02-19T11:50:02.825Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/beefin-b940a:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /{document=**} {\n      allow read: if true\n      allow create: if request.auth != null;\n      allow update: if request.auth != null;\n    }\n  }\n}"}]}}
+[debug] [2022-02-19T11:50:03.640Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2022-02-19T11:50:03.668Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/beefin-b940a/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-19T11:50:05.017Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:05.019Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/beefin-b940a/releases?pageSize=10&pageToken=  
+ 
+[debug] [2022-02-19T11:50:05.895Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:05.917Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/beefin-b940a/rulesets/c26402b2-49ed-469c-a525-cdc6af208f8b  
+ 
+[debug] [2022-02-19T11:50:06.618Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  storage: latest version of storage.rules already up to date, skipping upload... 
+[debug] [2022-02-19T11:50:06.621Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/beefin-b940a/releases?pageSize=10&pageToken=  
+ 
+[debug] [2022-02-19T11:50:06.622Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/beefin-b940a/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2022-02-19T11:50:06.869Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:06.870Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/beefin-b940a/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2022-02-19T11:50:07.088Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: The following indexes are defined in your project but are not present in your firestore indexes file:
+	(beefbook) -- (userId,ASCENDING) (timestamp,DESCENDING)  
+[debug] [2022-02-19T11:50:07.529Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-19T11:50:07.531Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/beefin-b940a/rulesets/a83fb44e-b706-4040-b1be-c54a4c311539  
+ 
+[debug] [2022-02-19T11:50:08.349Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Feb 2022 11:50:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
